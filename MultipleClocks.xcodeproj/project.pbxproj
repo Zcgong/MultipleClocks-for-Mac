@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5606728616588A58003A83DF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5606728516588A58003A83DF /* CoreGraphics.framework */; };
+		5606728816588AA0003A83DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5606728716588AA0003A83DF /* QuartzCore.framework */; };
+		5606729E16588BCA003A83DF /* -clock-face.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729716588BCA003A83DF /* -clock-face.png */; };
+		5606729F16588BCA003A83DF /* bliss-roman-aluminium-clock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5606729816588BCA003A83DF /* bliss-roman-aluminium-clock.jpg */; };
+		560672A016588BCA003A83DF /* clock-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729916588BCA003A83DF /* clock-background.png */; };
+		560672A116588BCA003A83DF /* clock-hour-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729A16588BCA003A83DF /* clock-hour-background.png */; };
+		560672A216588BCA003A83DF /* clock-min-background_.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729B16588BCA003A83DF /* clock-min-background_.png */; };
+		560672A316588BCA003A83DF /* clock-min-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729C16588BCA003A83DF /* clock-min-background.png */; };
+		560672A416588BCA003A83DF /* clock-sec-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5606729D16588BCA003A83DF /* clock-sec-background.png */; };
+		56128B15166B9C5400FA0A21 /* MCAnalogClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 56128B14166B9C5400FA0A21 /* MCAnalogClock.m */; };
+		562C739F165774E80042BE3D /* MCPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 562C739E165774E80042BE3D /* MCPreferenceController.m */; };
+		562C73A1165775F30042BE3D /* Preference.xib in Resources */ = {isa = PBXBuildFile; fileRef = 562C73A0165775F30042BE3D /* Preference.xib */; };
+		563A263716553E3F00DC72F9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563A263616553E3F00DC72F9 /* Cocoa.framework */; };
+		563A264316553E3F00DC72F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A264216553E3F00DC72F9 /* main.m */; };
+		563A265716553E9900DC72F9 /* MCClockPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A265616553E9900DC72F9 /* MCClockPanel.m */; };
+		563A265A16553EEE00DC72F9 /* MCBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A265916553EEE00DC72F9 /* MCBackgroundView.m */; };
+		563A266616553F8300DC72F9 /* MCMenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A266516553F8300DC72F9 /* MCMenubarController.m */; };
+		563A266916553FAD00DC72F9 /* MCPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A266816553FAD00DC72F9 /* MCPanelController.m */; };
+		563A266B16553FFA00DC72F9 /* ClockPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563A266A16553FFA00DC72F9 /* ClockPanel.xib */; };
+		563A266E165542DE00DC72F9 /* MCStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 563A266D165542DE00DC72F9 /* MCStatusItemView.m */; };
+		563A267816568A1A00DC72F9 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 563A267716568A1A00DC72F9 /* clock.png */; };
+		56721927165708DF002A54D3 /* normalImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56721925165708DF002A54D3 /* normalImage.png */; };
+		56721928165708DF002A54D3 /* activeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56721926165708DF002A54D3 /* activeImage.png */; };
+		569F4D40165CFD8D00216379 /* MCClockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 569F4D3F165CFD8D00216379 /* MCClockItem.m */; };
+		569F4D43165D005F00216379 /* MCClockTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 569F4D42165D005E00216379 /* MCClockTableCellView.m */; };
+		56D8D71116731842006DD99C /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D8D71016731842006DD99C /* MCAppDelegate.m */; };
+		56D8D71416731DD1006DD99C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D8D71216731DD1006DD99C /* MainMenu.xib */; };
+		56D8D71716731DE0006DD99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56D8D71516731DE0006DD99C /* InfoPlist.strings */; };
+		56D8D71A16731DFD006DD99C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 56D8D71816731DFD006DD99C /* Credits.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5606728516588A58003A83DF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5606728716588AA0003A83DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5606729716588BCA003A83DF /* -clock-face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "-clock-face.png"; sourceTree = "<group>"; };
+		5606729816588BCA003A83DF /* bliss-roman-aluminium-clock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bliss-roman-aluminium-clock.jpg"; sourceTree = "<group>"; };
+		5606729916588BCA003A83DF /* clock-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-background.png"; sourceTree = "<group>"; };
+		5606729A16588BCA003A83DF /* clock-hour-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-hour-background.png"; sourceTree = "<group>"; };
+		5606729B16588BCA003A83DF /* clock-min-background_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-min-background_.png"; sourceTree = "<group>"; };
+		5606729C16588BCA003A83DF /* clock-min-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-min-background.png"; sourceTree = "<group>"; };
+		5606729D16588BCA003A83DF /* clock-sec-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-sec-background.png"; sourceTree = "<group>"; };
+		56128B13166B9C5400FA0A21 /* MCAnalogClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAnalogClock.h; sourceTree = "<group>"; };
+		56128B14166B9C5400FA0A21 /* MCAnalogClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAnalogClock.m; sourceTree = "<group>"; };
+		562C739D165774E80042BE3D /* MCPreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPreferenceController.h; sourceTree = "<group>"; };
+		562C739E165774E80042BE3D /* MCPreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPreferenceController.m; sourceTree = "<group>"; };
+		562C73A0165775F30042BE3D /* Preference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preference.xib; sourceTree = "<group>"; };
+		563A263216553E3F00DC72F9 /* MultipleClocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleClocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		563A263616553E3F00DC72F9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		563A263916553E3F00DC72F9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		563A263A16553E3F00DC72F9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		563A263B16553E3F00DC72F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		563A263E16553E3F00DC72F9 /* MultipleClocks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultipleClocks-Info.plist"; sourceTree = "<group>"; };
+		563A264216553E3F00DC72F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		563A264416553E3F00DC72F9 /* MultipleClocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultipleClocks-Prefix.pch"; sourceTree = "<group>"; };
+		563A265516553E9900DC72F9 /* MCClockPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClockPanel.h; sourceTree = "<group>"; };
+		563A265616553E9900DC72F9 /* MCClockPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClockPanel.m; sourceTree = "<group>"; };
+		563A265816553EEE00DC72F9 /* MCBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCBackgroundView.h; sourceTree = "<group>"; };
+		563A265916553EEE00DC72F9 /* MCBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCBackgroundView.m; sourceTree = "<group>"; };
+		563A266416553F8300DC72F9 /* MCMenubarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMenubarController.h; sourceTree = "<group>"; };
+		563A266516553F8300DC72F9 /* MCMenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMenubarController.m; sourceTree = "<group>"; };
+		563A266716553FAD00DC72F9 /* MCPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPanelController.h; sourceTree = "<group>"; };
+		563A266816553FAD00DC72F9 /* MCPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPanelController.m; sourceTree = "<group>"; };
+		563A266A16553FFA00DC72F9 /* ClockPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockPanel.xib; sourceTree = "<group>"; };
+		563A266C165542DE00DC72F9 /* MCStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCStatusItemView.h; sourceTree = "<group>"; };
+		563A266D165542DE00DC72F9 /* MCStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCStatusItemView.m; sourceTree = "<group>"; };
+		563A267716568A1A00DC72F9 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		56721925165708DF002A54D3 /* normalImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normalImage.png; sourceTree = "<group>"; };
+		56721926165708DF002A54D3 /* activeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeImage.png; sourceTree = "<group>"; };
+		569F4D3E165CFD8D00216379 /* MCClockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClockItem.h; sourceTree = "<group>"; };
+		569F4D3F165CFD8D00216379 /* MCClockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClockItem.m; sourceTree = "<group>"; };
+		569F4D41165D005E00216379 /* MCClockTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClockTableCellView.h; sourceTree = "<group>"; };
+		569F4D42165D005E00216379 /* MCClockTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClockTableCellView.m; sourceTree = "<group>"; };
+		56D8D70F16731842006DD99C /* MCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		56D8D71016731842006DD99C /* MCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		56D8D71316731DD1006DD99C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		56D8D71616731DE0006DD99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		56D8D71916731DFD006DD99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		563A262F16553E3F00DC72F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5606728816588AA0003A83DF /* QuartzCore.framework in Frameworks */,
+				5606728616588A58003A83DF /* CoreGraphics.framework in Frameworks */,
+				563A263716553E3F00DC72F9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		563A262716553E3F00DC72F9 = {
+			isa = PBXGroup;
+			children = (
+				569F4D3C165CFD0800216379 /* Models */,
+				5672192A16573BDB002A54D3 /* Xibs */,
+				563A266316553F3C00DC72F9 /* Controllers */,
+				563A265416553E5600DC72F9 /* Resources */,
+				563A265316553E4F00DC72F9 /* Views */,
+				563A263D16553E3F00DC72F9 /* Supporting Files */,
+				563A263516553E3F00DC72F9 /* Frameworks */,
+				563A263316553E3F00DC72F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		563A263316553E3F00DC72F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				563A263216553E3F00DC72F9 /* MultipleClocks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		563A263516553E3F00DC72F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5606728716588AA0003A83DF /* QuartzCore.framework */,
+				5606728516588A58003A83DF /* CoreGraphics.framework */,
+				563A263616553E3F00DC72F9 /* Cocoa.framework */,
+				563A263816553E3F00DC72F9 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		563A263816553E3F00DC72F9 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				563A263916553E3F00DC72F9 /* AppKit.framework */,
+				563A263A16553E3F00DC72F9 /* CoreData.framework */,
+				563A263B16553E3F00DC72F9 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		563A263D16553E3F00DC72F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56D8D71816731DFD006DD99C /* Credits.rtf */,
+				56D8D71516731DE0006DD99C /* InfoPlist.strings */,
+				563A263E16553E3F00DC72F9 /* MultipleClocks-Info.plist */,
+				563A264216553E3F00DC72F9 /* main.m */,
+				563A264416553E3F00DC72F9 /* MultipleClocks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = MultipleClocks;
+			sourceTree = "<group>";
+		};
+		563A265316553E4F00DC72F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				569F4D41165D005E00216379 /* MCClockTableCellView.h */,
+				569F4D42165D005E00216379 /* MCClockTableCellView.m */,
+				56128B13166B9C5400FA0A21 /* MCAnalogClock.h */,
+				56128B14166B9C5400FA0A21 /* MCAnalogClock.m */,
+				563A266C165542DE00DC72F9 /* MCStatusItemView.h */,
+				563A266D165542DE00DC72F9 /* MCStatusItemView.m */,
+				563A265816553EEE00DC72F9 /* MCBackgroundView.h */,
+				563A265916553EEE00DC72F9 /* MCBackgroundView.m */,
+				563A265516553E9900DC72F9 /* MCClockPanel.h */,
+				563A265616553E9900DC72F9 /* MCClockPanel.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		563A265416553E5600DC72F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5606729716588BCA003A83DF /* -clock-face.png */,
+				5606729816588BCA003A83DF /* bliss-roman-aluminium-clock.jpg */,
+				5606729916588BCA003A83DF /* clock-background.png */,
+				5606729A16588BCA003A83DF /* clock-hour-background.png */,
+				5606729B16588BCA003A83DF /* clock-min-background_.png */,
+				5606729C16588BCA003A83DF /* clock-min-background.png */,
+				5606729D16588BCA003A83DF /* clock-sec-background.png */,
+				56721925165708DF002A54D3 /* normalImage.png */,
+				56721926165708DF002A54D3 /* activeImage.png */,
+				563A267716568A1A00DC72F9 /* clock.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		563A266316553F3C00DC72F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56D8D70F16731842006DD99C /* MCAppDelegate.h */,
+				56D8D71016731842006DD99C /* MCAppDelegate.m */,
+				563A266416553F8300DC72F9 /* MCMenubarController.h */,
+				563A266516553F8300DC72F9 /* MCMenubarController.m */,
+				563A266716553FAD00DC72F9 /* MCPanelController.h */,
+				563A266816553FAD00DC72F9 /* MCPanelController.m */,
+				562C739D165774E80042BE3D /* MCPreferenceController.h */,
+				562C739E165774E80042BE3D /* MCPreferenceController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5672192A16573BDB002A54D3 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				56D8D71216731DD1006DD99C /* MainMenu.xib */,
+				563A266A16553FFA00DC72F9 /* ClockPanel.xib */,
+				562C73A0165775F30042BE3D /* Preference.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		569F4D3C165CFD0800216379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				569F4D3E165CFD8D00216379 /* MCClockItem.h */,
+				569F4D3F165CFD8D00216379 /* MCClockItem.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		563A263116553E3F00DC72F9 /* MultipleClocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 563A265016553E3F00DC72F9 /* Build configuration list for PBXNativeTarget "MultipleClocks" */;
+			buildPhases = (
+				563A262E16553E3F00DC72F9 /* Sources */,
+				563A262F16553E3F00DC72F9 /* Frameworks */,
+				563A263016553E3F00DC72F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultipleClocks;
+			productName = MultipleClocks;
+			productReference = 563A263216553E3F00DC72F9 /* MultipleClocks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		563A262916553E3F00DC72F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = tonyzhou;
+			};
+			buildConfigurationList = 563A262C16553E3F00DC72F9 /* Build configuration list for PBXProject "MultipleClocks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 563A262716553E3F00DC72F9;
+			productRefGroup = 563A263316553E3F00DC72F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				563A263116553E3F00DC72F9 /* MultipleClocks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		563A263016553E3F00DC72F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563A266B16553FFA00DC72F9 /* ClockPanel.xib in Resources */,
+				563A267816568A1A00DC72F9 /* clock.png in Resources */,
+				56721927165708DF002A54D3 /* normalImage.png in Resources */,
+				56721928165708DF002A54D3 /* activeImage.png in Resources */,
+				562C73A1165775F30042BE3D /* Preference.xib in Resources */,
+				5606729E16588BCA003A83DF /* -clock-face.png in Resources */,
+				5606729F16588BCA003A83DF /* bliss-roman-aluminium-clock.jpg in Resources */,
+				560672A016588BCA003A83DF /* clock-background.png in Resources */,
+				560672A116588BCA003A83DF /* clock-hour-background.png in Resources */,
+				560672A216588BCA003A83DF /* clock-min-background_.png in Resources */,
+				560672A316588BCA003A83DF /* clock-min-background.png in Resources */,
+				560672A416588BCA003A83DF /* clock-sec-background.png in Resources */,
+				56D8D71416731DD1006DD99C /* MainMenu.xib in Resources */,
+				56D8D71716731DE0006DD99C /* InfoPlist.strings in Resources */,
+				56D8D71A16731DFD006DD99C /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		563A262E16553E3F00DC72F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				563A264316553E3F00DC72F9 /* main.m in Sources */,
+				563A265716553E9900DC72F9 /* MCClockPanel.m in Sources */,
+				563A265A16553EEE00DC72F9 /* MCBackgroundView.m in Sources */,
+				563A266616553F8300DC72F9 /* MCMenubarController.m in Sources */,
+				563A266916553FAD00DC72F9 /* MCPanelController.m in Sources */,
+				563A266E165542DE00DC72F9 /* MCStatusItemView.m in Sources */,
+				562C739F165774E80042BE3D /* MCPreferenceController.m in Sources */,
+				569F4D40165CFD8D00216379 /* MCClockItem.m in Sources */,
+				569F4D43165D005F00216379 /* MCClockTableCellView.m in Sources */,
+				56128B15166B9C5400FA0A21 /* MCAnalogClock.m in Sources */,
+				56D8D71116731842006DD99C /* MCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56D8D71216731DD1006DD99C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D8D71316731DD1006DD99C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		56D8D71516731DE0006DD99C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D8D71616731DE0006DD99C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56D8D71816731DFD006DD99C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D8D71916731DFD006DD99C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		563A264E16553E3F00DC72F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		563A264F16553E3F00DC72F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		563A265116553E3F00DC72F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultipleClocks-Prefix.pch";
+				INFOPLIST_FILE = "MultipleClocks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		563A265216553E3F00DC72F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultipleClocks-Prefix.pch";
+				INFOPLIST_FILE = "MultipleClocks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		563A262C16553E3F00DC72F9 /* Build configuration list for PBXProject "MultipleClocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563A264E16553E3F00DC72F9 /* Debug */,
+				563A264F16553E3F00DC72F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		563A265016553E3F00DC72F9 /* Build configuration list for PBXNativeTarget "MultipleClocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563A265116553E3F00DC72F9 /* Debug */,
+				563A265216553E3F00DC72F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 563A262916553E3F00DC72F9 /* Project object */;
+}
