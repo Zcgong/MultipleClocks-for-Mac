@@ -7,15 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MCPreference.h"
 #import "MCStatusItemView.h"
 #import "MCBackgroundView.h"
 
 @class MCPanelController;
 
+#pragma mark delegate
+
 @protocol PanelControllerDelegate <NSObject>
 - (MCStatusItemView *)statusItemViewForPanelController:(MCPanelController *)controller;
 - (void)openPreferencePanel:(MCPanelController *)controller;
 @end
+
+
+#pragma mark clockitem
+
+@interface MCClockItem : NSObject
+
+@property (nonatomic, strong, readwrite) NSString *clockName;
+@property (nonatomic, strong, readwrite) NSTimeZone *timeZone;
+@property (nonatomic, strong, readwrite) NSCalendar *calendar;
+
+@end
+
+
+#pragma mark clockpanel
 
 @interface MCPanelController : NSWindowController<NSWindowDelegate, NSTableViewDelegate, NSTableViewDataSource>
 {

@@ -30,7 +30,7 @@
 		563A267816568A1A00DC72F9 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 563A267716568A1A00DC72F9 /* clock.png */; };
 		56721927165708DF002A54D3 /* normalImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56721925165708DF002A54D3 /* normalImage.png */; };
 		56721928165708DF002A54D3 /* activeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 56721926165708DF002A54D3 /* activeImage.png */; };
-		569F4D40165CFD8D00216379 /* MCClockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 569F4D3F165CFD8D00216379 /* MCClockItem.m */; };
+		567A4E75173CDFD5009CFCF6 /* MCPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 567A4E74173CDFD5009CFCF6 /* MCPreference.m */; };
 		569F4D43165D005F00216379 /* MCClockTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 569F4D42165D005E00216379 /* MCClockTableCellView.m */; };
 		56D8D71116731842006DD99C /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D8D71016731842006DD99C /* MCAppDelegate.m */; };
 		56D8D71416731DD1006DD99C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D8D71216731DD1006DD99C /* MainMenu.xib */; };
@@ -75,8 +75,8 @@
 		563A267716568A1A00DC72F9 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
 		56721925165708DF002A54D3 /* normalImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normalImage.png; sourceTree = "<group>"; };
 		56721926165708DF002A54D3 /* activeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeImage.png; sourceTree = "<group>"; };
-		569F4D3E165CFD8D00216379 /* MCClockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClockItem.h; sourceTree = "<group>"; };
-		569F4D3F165CFD8D00216379 /* MCClockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClockItem.m; sourceTree = "<group>"; };
+		567A4E73173CDFD5009CFCF6 /* MCPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPreference.h; sourceTree = "<group>"; };
+		567A4E74173CDFD5009CFCF6 /* MCPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPreference.m; sourceTree = "<group>"; };
 		569F4D41165D005E00216379 /* MCClockTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCClockTableCellView.h; sourceTree = "<group>"; };
 		569F4D42165D005E00216379 /* MCClockTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCClockTableCellView.m; sourceTree = "<group>"; };
 		56D8D70F16731842006DD99C /* MCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
@@ -218,8 +218,8 @@
 		569F4D3C165CFD0800216379 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				569F4D3E165CFD8D00216379 /* MCClockItem.h */,
-				569F4D3F165CFD8D00216379 /* MCClockItem.m */,
+				567A4E73173CDFD5009CFCF6 /* MCPreference.h */,
+				567A4E74173CDFD5009CFCF6 /* MCPreference.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -308,10 +308,10 @@
 				563A266916553FAD00DC72F9 /* MCPanelController.m in Sources */,
 				563A266E165542DE00DC72F9 /* MCStatusItemView.m in Sources */,
 				562C739F165774E80042BE3D /* MCPreferenceController.m in Sources */,
-				569F4D40165CFD8D00216379 /* MCClockItem.m in Sources */,
 				569F4D43165D005F00216379 /* MCClockTableCellView.m in Sources */,
 				56128B15166B9C5400FA0A21 /* MCAnalogClock.m in Sources */,
 				56D8D71116731842006DD99C /* MCAppDelegate.m in Sources */,
+				567A4E75173CDFD5009CFCF6 /* MCPreference.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

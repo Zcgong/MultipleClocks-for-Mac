@@ -11,7 +11,8 @@
 #import "MCStatusItemView.h"
 #import "MCBackgroundView.h"
 #import "MCClockTableCellView.h"
-#import "MCClockItem.h"
+
+#pragma mark macros
 
 #define OPEN_DURATION .15
 #define CLOSE_DURATION .1
@@ -22,6 +23,18 @@
 //#define PANEL_WIDTH 280
 #define MENU_ANIMATION_DURATION .1
 
+#pragma mark clockitem
+
+@implementation MCClockItem
+
+@synthesize clockName = _clockName;
+@synthesize timeZone = _timeZone;
+@synthesize calendar = _calendar;
+
+@end
+
+#pragma mark clockpanel
+
 @implementation MCPanelController
 
 @synthesize delegate = _delegate;
@@ -29,39 +42,35 @@
 @synthesize clockTable = _clockTable;
 @synthesize tableContainer = _tableContainer;
 
+- (void)loadClockListFromPreference
+{
+    
+    [_clockList removeAllObjects];
+    
+    NSMutableArray * clockConfigs = [[NSMutableArray alloc] init];
+    [clockConfigs addObject:[[MCClockConfigItem alloc] initWithClockName:@"Hangzhou" Timezone:@"US/Pacific"]];
+    [clockConfigs addObject:[[MCClockConfigItem alloc] initWithClockName:@"Hangzhou2" Timezone:@"Asia/Beijing"]];
+    
+    for(MCClockConfigItem * configItem in clockConfigs)
+    {
+        MCClockItem * clockItem = [[MCClockItem alloc] init];
+        clockItem.clockName = configItem.clockName;
+        clockItem.timeZone = [NSTimeZone timeZoneWithName:configItem.clockTimezoneName];
+        clockItem.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        [clockItem.calendar setTimeZone:clockItem.timeZone];
+        
+        [_clockList addObject:clockItem];
+    }
+}
+
 - (id)initWithDelegate:(id<PanelControllerDelegate>)d
 {
     self = [super initWithWindowNibName:@"ClockPanel"];
     if(self)
     {
         _delegate = d;
-        
         _clockList = [[NSMutableArray alloc] init];
-        
-        MCClockItem * item = [[MCClockItem alloc] init];
-        item.clockName = @"Hangzhou";
-        item.timeZone = [NSTimeZone defaultTimeZone];
-        item.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        [item.calendar setTimeZone:item.timeZone];
-        
-        [_clockList insertObject:item atIndex:0];
-        
-        item = [[MCClockItem alloc] init];
-        item.clockName = @"PST";
-        item.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"PST"];
-        item.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        [item.calendar setTimeZone:item.timeZone];
-
-        [_clockList insertObject:item atIndex:1];
-        
-        item = [[MCClockItem alloc] init];
-        item.clockName = @"GMT";
-        item.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
-        item.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-        [item.calendar setTimeZone:item.timeZone];
-        
-        [_clockList insertObject:item atIndex:2];
-        
+        [self loadClockListFromPreference];
     }
     
     return self;

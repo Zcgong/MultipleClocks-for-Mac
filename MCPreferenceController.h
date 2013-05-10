@@ -7,12 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MCPreference.h"
 
-extern NSString * const kLaunchAtLoginKey;
-extern NSString * const kShortCutKey;
-extern NSString * const kUse24HourKey;
-extern NSString * const kClocksKey;
-extern NSString * const kCurrentProfileKey;
+#pragma mark -
 
 @interface MCPreferenceController : NSWindowController
 {
@@ -25,10 +22,5 @@ extern NSString * const kCurrentProfileKey;
     IBOutlet NSImageView *_profileView;
 }
 
-- (BOOL)launchAtLogin;
-- (NSString *) shortCut;
-- (BOOL) use24Hour;
-- (NSMutableArray *) clocks;
-- (NSString *) currentProfile;
 
 @end

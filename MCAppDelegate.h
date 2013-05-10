@@ -13,9 +13,9 @@
 
 @interface MCAppDelegate : NSObject <NSApplicationDelegate, PanelControllerDelegate>
 
-@property (nonatomic, strong) MCMenubarController *menubarController;
-@property (nonatomic, strong, readonly) MCPanelController *panelController;
-@property (nonatomic, strong) MCPreferenceController *preferenceController;
+@property (nonatomic, strong) MCMenubarController *menubarController;           // controller for status item in menubar
+@property (nonatomic, strong, readonly) MCPanelController *panelController;     // controller for clock panel
+@property (nonatomic, strong) MCPreferenceController *preferenceController;     // controller for preference setting dialog
 
 - (void)openPreferencePanel:(MCPanelController *)controller;
 - (IBAction)toggleStatus:(id)sender;

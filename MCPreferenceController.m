@@ -8,12 +8,6 @@
 
 #import "MCPreferenceController.h"
 
-NSString * const kLaunchAtLoginKey = @"LaunchAtLogin";
-NSString * const kShortCutKey = @"ShortCut";
-NSString * const kUse24HourKey = @"Use24Hour";
-NSString * const kClocksKey= @"Clocks";
-NSString * const kCurrentProfileKey = @"CurrentProfile";
-
 @interface MCPreferenceController()
 
 @end
@@ -32,42 +26,12 @@ NSString * const kCurrentProfileKey = @"CurrentProfile";
 }
 
 
-- (BOOL)launchAtLogin
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults boolForKey:kLaunchAtLoginKey];
-}
-
-- (NSString *)shortCut
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:kShortCutKey];
-}
-
-- (BOOL)use24Hour
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults boolForKey:kUse24HourKey];
-}
-
-- (NSMutableArray *)clocks
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:kClocksKey];
-}
-
-- (NSString *)currentProfile
-{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:kCurrentProfileKey];
-}
-
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    [_launchAtLoginButton setState:[self launchAtLogin]];
-    [_hotKeyTextField setStringValue:[self shortCut]];
-    [_use24HourButton setState:[self use24Hour]];
+    [_launchAtLoginButton setState:[MCPreference launchAtLogon]];
+    [_hotKeyTextField setStringValue:[MCPreference shortCut]];
+    [_use24HourButton setState:[MCPreference use24Hour]];
     
     NSLog(@"Nib file is loaded");
 }

@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "159"
-         endingLineNumber = "159"
+         startingLineNumber = "168"
+         endingLineNumber = "168"
          landmarkName = "-openPanel"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376501252.850661"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
+         startingLineNumber = "81"
+         endingLineNumber = "81"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
+         startingLineNumber = "91"
+         endingLineNumber = "91"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "113"
-         endingLineNumber = "113"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
          landmarkName = "-windowDidResize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
+         startingLineNumber = "129"
+         endingLineNumber = "129"
          landmarkName = "-windowDidResize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "119"
-         endingLineNumber = "119"
+         startingLineNumber = "128"
+         endingLineNumber = "128"
          landmarkName = "-windowDidResize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -351,11 +351,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPreferenceController.m"
-         timestampString = "375523008.364587"
+         timestampString = "389867348.273714"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "28"
+         endingLineNumber = "28"
          landmarkName = "@implementation MCPreferenceController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -363,25 +363,12 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "MCPreferenceController.m"
-         timestampString = "375523009.698414"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
-         landmarkName = "-currentProfile"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "213"
-         endingLineNumber = "213"
+         startingLineNumber = "222"
+         endingLineNumber = "222"
          landmarkName = "-EditPreference:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -429,24 +416,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376501252.850661"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "49"
-         endingLineNumber = "49"
-         landmarkName = "-initWithDelegate:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MCPanelController.m"
-         timestampString = "376582605.533098"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "276"
-         endingLineNumber = "276"
+         startingLineNumber = "285"
+         endingLineNumber = "285"
          landmarkName = "-startClock"
          landmarkType = "5">
       </FileBreakpoint>
@@ -455,11 +429,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376582605.533098"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "265"
-         endingLineNumber = "265"
+         startingLineNumber = "274"
+         endingLineNumber = "274"
          landmarkName = "-UpdateClockViews:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -468,11 +442,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376582605.533098"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "277"
-         endingLineNumber = "277"
+         startingLineNumber = "286"
+         endingLineNumber = "286"
          landmarkName = "-startClock"
          landmarkType = "5">
       </FileBreakpoint>
@@ -481,11 +455,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376582605.533098"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "266"
-         endingLineNumber = "266"
+         startingLineNumber = "275"
+         endingLineNumber = "275"
          landmarkName = "-UpdateClockViews:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -494,11 +468,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MCPanelController.m"
-         timestampString = "376502249.462416"
+         timestampString = "389890128.663212"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "191"
-         endingLineNumber = "191"
+         startingLineNumber = "200"
+         endingLineNumber = "200"
          landmarkName = "-openPanel"
          landmarkType = "5">
       </FileBreakpoint>
@@ -512,6 +486,110 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "11"
          endingLineNumber = "11">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389888608.118632"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "48"
+         endingLineNumber = "48"
+         landmarkName = "-loadClockListFromPreference"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "68"
+         endingLineNumber = "68"
+         landmarkName = "-initWithDelegate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "71"
+         endingLineNumber = "71"
+         landmarkName = "-initWithDelegate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "72"
+         endingLineNumber = "72"
+         landmarkName = "-initWithDelegate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-loadClockListFromPreference"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
+         landmarkName = "-initWithDelegate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
+         landmarkName = "-initWithDelegate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MCPanelController.m"
+         timestampString = "389890128.663212"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "62"
+         endingLineNumber = "62"
+         landmarkName = "-loadClockListFromPreference"
+         landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>
