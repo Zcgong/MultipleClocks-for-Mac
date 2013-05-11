@@ -7,12 +7,15 @@
 //
 
 #import "MCPreferenceController.h"
+#import "MCPreference.h"
 
 @interface MCPreferenceController()
 
 @end
 
 @implementation MCPreferenceController
+
+@synthesize clockConfigs = _clockConfigs;
 
 - (id)init
 {
@@ -32,6 +35,8 @@
     [_launchAtLoginButton setState:[MCPreference launchAtLogon]];
     [_hotKeyTextField setStringValue:[MCPreference shortCut]];
     [_use24HourButton setState:[MCPreference use24Hour]];
+    
+    NSMutableArray * clockList = [MCPreference clocks];
     
     NSLog(@"Nib file is loaded");
 }

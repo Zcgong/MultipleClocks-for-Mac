@@ -16,12 +16,14 @@ extern NSString * const kUse24HourKey;
 extern NSString * const kClocksKey;
 extern NSString * const kCurrentProfileKey;
 
-@interface MCClockConfigItem : NSObject
+@interface MCClockConfigItem : NSObject<NSCoding>
 
 @property (nonatomic,strong) NSString * clockName;
 @property (nonatomic,strong) NSString * clockTimezoneName;
 
 - (id)initWithClockName:(NSString *)clockName Timezone:(NSString *)timeZone;
+- (id)initWithCoder:(NSCoder *)aDecoder;
+- (void)encodeWithCoder:(NSCoder *)aCoder;
 
 @end
 
@@ -36,7 +38,7 @@ extern NSString * const kCurrentProfileKey;
 + (BOOL)use24Hour;
 + (void)setUse24Hour:(BOOL)use24Hour;
 + (NSMutableArray *)clocks;
-+ (void)setClocks:(NSString *)clocks;
+//+ (void)setClocks:(NSString *)clocks;
 + (NSInteger)currentProfile;
 + (void)setCurrentProfile:(NSInteger)profile;
 

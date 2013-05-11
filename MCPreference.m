@@ -31,6 +31,24 @@ NSString * const kCurrentProfileKey = @"CurrentProfile";
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    if(self)
+    {
+        self.clockName = [aDecoder decodeObjectForKey:@"clockName"];
+        self.clockTimezoneName = [aDecoder decodeObjectForKey:@"clockTimezoneName"];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.clockName forKey:@"clockName"];
+    [aCoder encodeObject:self.clockTimezoneName forKey:@"clockTimezoneName"];
+}
+
 @end
 
 @implementation MCPreference
@@ -43,11 +61,14 @@ NSString * const kCurrentProfileKey = @"CurrentProfile";
     [defaultValues setObject:[NSNumber numberWithBool:NO] forKey:kUse24HourKey];
     [defaultValues setObject:[NSNumber numberWithInt:0] forKey:kCurrentProfileKey];
     
-    NSMutableArray * clockConfigs = [[NSMutableArray alloc] init];
+    NSMutableArray * clockConfigs = [NSMutableArray array];
     MCClockConfigItem * hostClockConfig = [[MCClockConfigItem alloc] initWithClockName:@"Hangzhou" Timezone:@"US/Pacific"];
     [clockConfigs addObject:hostClockConfig];
     
-    [defaultValues setObject:clockConfigs forKey:kClocksKey];
+    NSData * data = [NSKeyedArchiver archivedDataWithRootObject:clockConfigs];
+    
+    
+    [defaultValues setObject:data forKey:kClocksKey];
     [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
 }
 
@@ -88,7 +109,9 @@ NSString * const kCurrentProfileKey = @"CurrentProfile";
 + (NSMutableArray *)clocks
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:kClocksKey];
+    NSData * data = [defaults objectForKey:kClocksKey];
+    NSMutableArray * clockConfigs = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    return clockConfigs;
 }
 
 + (NSInteger)currentProfile

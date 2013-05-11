@@ -7,12 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MCPreference.h"
 
 #pragma mark -
 
-@interface MCPreferenceController : NSWindowController
+@interface MCPreferenceController : NSWindowController<NSTableViewDataSource>
 {
+    NSMutableArray * _clockConfigs;
+    
     IBOutlet NSButton *_use24HourButton;
     IBOutlet NSButton *_launchAtLoginButton;
     IBOutlet NSTextField *_hotKeyTextField;
@@ -22,5 +23,6 @@
     IBOutlet NSImageView *_profileView;
 }
 
+@property (nonatomic, strong) NSMutableArray * clockConfigs;
 
 @end
