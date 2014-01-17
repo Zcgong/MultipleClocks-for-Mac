@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F6880114-7156-40C0-80FD-59784E907C43</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MultipleClocks</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>937A2C4A-A982-44D8-A197-9B50DA4E3FDF</key>
+		<string>https://github.com/tonyzhou/MultipleClocks-for-Mac.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MultipleClocks.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>937A2C4A-A982-44D8-A197-9B50DA4E3FDF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tonyzhou/MultipleClocks-for-Mac.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>937A2C4A-A982-44D8-A197-9B50DA4E3FDF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>937A2C4A-A982-44D8-A197-9B50DA4E3FDF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MultipleClocks-for-Mac</string>
+		</dict>
+	</array>
+</dict>
+</plist>
